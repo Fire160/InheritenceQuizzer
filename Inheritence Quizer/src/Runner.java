@@ -27,9 +27,9 @@ public class Runner
 		 	System.out.println("I'll just give you one.");
 		 	num = 1;
 		 	}
-		if(num > 20)
+		if(num > 24)
 			{
-			System.out.println("I only have 20 questions, sorry!");
+			System.out.println("I only have 24 questions, sorry!");
 			num = 20;
 			}
 		for(int i = 0; i < num; i++)

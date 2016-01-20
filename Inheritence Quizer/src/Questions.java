@@ -29,26 +29,30 @@ public class Questions
 	public static ArrayList<Question> makeQuestions()
 		{
 		ArrayList<Question> temp = new ArrayList<Question>();
-		temp.add(new Question("Animal a = new Bat();","a.eat();",true));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
-		temp.add(new Question("Placeolder","Swag",false));
+		temp.add(new Question("Animal a = new FlightBehavior();","a.fly();",false));
+		temp.add(new Question("Animal a = new Mammel();","a.eat();",true));
+		temp.add(new Question("Animal a = new Bat();","a.growFur();",false));
+		temp.add(new Question("Bat a = new Bat();","a.fly();",true));
+		temp.add(new Question("Cow a = new Bat();","a.eat();",false));
+		temp.add(new Question("Penquin a = new Bat();","a.eat();",false));
+		temp.add(new Question("FlightBehavior a = new Animal();","a.fly();",false));
+		temp.add(new Question("Mammal a = new Bat();","a.eat();",true));
+		temp.add(new Question("Mammal a = new Bat();","a.bearYoung();",true));
+		temp.add(new Question("Mammal a = new Cow();","a.growFeathers();",false));
+		temp.add(new Question("Mammal a = new Cow();","a.bearYoung();",true));
+		temp.add(new Question("Animal a = new Cow();","a.GrowFur();",false));
+		temp.add(new Question("Bird a = new Bat();","a.eat();",false));
+		temp.add(new Question("Bird a = new Robin();","a.growFeathers();",true));
+		temp.add(new Question("Bird a = new Robin();","a.growFur();",false));
+		temp.add(new Question("Bird a = new Penguin();","a.fly();",true));
+		temp.add(new Question("Bird a = new Penguin();","a.growFur();",false));
+		temp.add(new Question("Mammal a = new Penguin();","a.bearYoung();",false));
+		temp.add(new Question("Animal a = new Bird();","a.eat();",true));
+		temp.add(new Question("Animal a = new Penguin();","a.growFur();",false));
+		temp.add(new Question("Animal a = new Robin();","a.growFeathers();",false));
+		temp.add(new Question("Animal a = new Cow();","a.bearYoung();",true));
+		temp.add(new Question("FlightBehavior a = new Bat();","a.fly();",false));
+		temp.add(new Question("FlightBehavior a = new Mammal();","a.bearYoung();",false));
 		return temp;
 		}
 	}
