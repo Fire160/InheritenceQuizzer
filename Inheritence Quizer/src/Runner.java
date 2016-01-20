@@ -1,8 +1,10 @@
 import java.util.Scanner;
+import java.util.ArrayList; 
 
 public class Runner
 	{
 	public static boolean running = true;
+	public static ArrayList<String> stuff = new ArrayList<String>();
 	public static Scanner things = new Scanner(System.in);
 	public static int count = 0;
 	public static void main(String[] args)
@@ -17,6 +19,17 @@ public class Runner
 	public static int quizStart()
 		{
 		System.out.println("Welcome! Enter in the number of questions on Inheritence you desire!");
-		return things.nextInt();
+		int num = things.nextInt();
+		if(num < 1)
+			{
+			System.out.println("I'll just give you one.");
+			stuff.add("lol");
+			return 1;
+			}
+		for(int i = 0; i < num; i++)
+			{
+			stuff.add("lel");
+			}
+		return num;
 		}
 	}
