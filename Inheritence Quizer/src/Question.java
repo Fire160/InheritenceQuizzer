@@ -1,12 +1,12 @@
 public class Question
 	{
-	private String q1;
-	private String q2;
+	private String q;
+	private String qTwo;
 	private boolean a;
-	public Question(String d, String dt, boolean t)
+	public Question(String s, String st, boolean t)
 		{
-		d = q1;
-		dt = q2;
+		q = s;
+		qTwo = st;
 		a = t;
 		}
 	public boolean isA()
@@ -17,20 +17,20 @@ public class Question
 		{
 		this.a = a;
 		}
-	public String getQ1()
+	public String getqTwo()
 		{
-		return q1;
+		return qTwo;
 		}
-	public void setQ1(String q1)
+	public void setqTwo(String qTwo)
 		{
-		this.q1 = q1;
+		this.qTwo = qTwo;
 		}
-	public String getQ2()
+	public String getQ()
 		{
-		return q2;
+		return q;
 		}
-	public void setQ2(String q2)
+	public void setQ(String q)
 		{
-		this.q2 = q2;
+		this.q = q;
 		}
 	}

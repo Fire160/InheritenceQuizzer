@@ -4,22 +4,22 @@ import java.util.Scanner;
 public class Runner
 	{
 	public static boolean running = true;
-	public static Scanner things = new Scanner(System.in);
-	public static ArrayList<Question> questions = new ArrayList<Question>();
 	public static int count = 0;
 	public static void main(String[] args)
 		{
-		quizStart();
+		ArrayList<Question> questions = new ArrayList<Question>();
+		quizStart(questions);
 		while(questions.size() > 0)
 			{
-			Questions.questionAsk();
+			Questions.questionAsk(questions);
 			questions.remove(0);
 			}
 		System.out.println("You got " + count + " questions right!");
 		}
-	public static void quizStart()
+	public static void quizStart(ArrayList<Question> questions)
 		{
 		System.out.println("Welcome! Enter in the number of questions on Inheritence you desire!");
+		Scanner things = new Scanner(System.in);
 		int num = things.nextInt();
 		ArrayList<Question> stuff = Questions.makeQuestions();
 		if(num < 1)
