@@ -17,4 +17,8 @@ public abstract class Animal
 		{
 		return name;
 		}
+	public void fly()
+		{
+		
+		}
 	}

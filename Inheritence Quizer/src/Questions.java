@@ -8,8 +8,8 @@ public class Questions
 		Scanner first = new Scanner(System.in);
 		System.out.println("--------------------------------------");
 		System.out.println("Will this piece of code run correctly?");
-		System.out.println(questions.get(0).getQ() + " stuff");
-		System.out.println(questions.get(0).getqTwo() + " things");
+		System.out.println(questions.get(0).getQ());
+		System.out.println(questions.get(0).getqTwo());
 		String ans = first.nextLine();
 		if(ans.contains("true") && questions.get(0).isA() == true)
 			{
@@ -30,7 +30,7 @@ public class Questions
 		{
 		ArrayList<Question> temp = new ArrayList<Question>();
 		temp.add(new Question("Animal a = new FlightBehavior();","a.fly();",false));
-		temp.add(new Question("Animal a = new Mammel();","a.eat();",true));
+		temp.add(new Question("Animal a = new Mammal();","a.eat();",true));
 		temp.add(new Question("Animal a = new Bat();","a.growFur();",false));
 		temp.add(new Question("Bat a = new Bat();","a.fly();",true));
 		temp.add(new Question("Cow a = new Bat();","a.eat();",false));

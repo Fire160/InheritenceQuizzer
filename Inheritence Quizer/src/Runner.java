@@ -9,6 +9,7 @@ public class Runner
 		{
 		ArrayList<Question> questions = new ArrayList<Question>();
 		quizStart(questions);
+		System.out.println("Type true or false ;)");
 		while(questions.size() > 0)
 			{
 			Questions.questionAsk(questions);
